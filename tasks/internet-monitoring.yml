@@ -47,3 +47,6 @@
     project_src: "{{ config_dir }}/internet-monitoring/"
     build: false
   become: false
+  # FIXME python2 doesn't work, use python3 instead
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
